@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="branch">
+    <Key>
+      <PropertyRef Name="branchID" />
+    </Key>
+    <Property Name="branchID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="branchName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telephone" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="billingAddress" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailAddress" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="buyorders" Relationship="Self.buyorder_fk2" FromRole="branch" ToRole="buyorder" />
+    <NavigationProperty Name="showcases" Relationship="mdbModel.showcase_fk2" FromRole="branch" ToRole="showcase" />
+  </EntityType>
+  <EntityType Name="buyorder">
+    <Key>
+      <PropertyRef Name="orderID" />
+    </Key>
+    <Property Name="orderID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customerID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="totalAmount" Type="Decimal" Nullable="false" />
+    <Property Name="orderDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="pickupPlace" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="branch" Relationship="Self.buyorder_fk2" FromRole="buyorder" ToRole="branch" />
+    <NavigationProperty Name="customer" Relationship="Self.buyorder_fk1" FromRole="buyorder" ToRole="customer" />
+    <NavigationProperty Name="orderitems" Relationship="Self.orderitem_fk1" FromRole="buyorder" ToRole="orderitem" />
+  </EntityType>
+  <EntityType Name="creditcard">
+    <Key>
+      <PropertyRef Name="cardNumber" />
+    </Key>
+    <Property Name="cardNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="customerID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="validDate" Type="DateTime" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="Self.creditcard_fk1" FromRole="creditcard" ToRole="customer" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="customerID" />
+    </Key>
+    <Property Name="customerID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="billingAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="true" />
+    <Property Name="avatar" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="true" />
+    <NavigationProperty Name="buyorders" Relationship="Self.buyorder_fk1" FromRole="customer" ToRole="buyorder" />
+    <NavigationProperty Name="creditcards" Relationship="Self.creditcard_fk1" FromRole="customer" ToRole="creditcard" />
+    <NavigationProperty Name="reservations" Relationship="Self.reservation_fk2" FromRole="customer" ToRole="reservation" />
+    <Property Name="telephone" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="true" />
+  </EntityType>
+  <EntityType Name="district">
+    <Key>
+      <PropertyRef Name="districtID" />
+    </Key>
+    <Property Name="districtID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="regionID" Type="Int32" Nullable="false" />
+    <Property Name="districtName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="region" Relationship="Self.district_fk1" FromRole="district" ToRole="region" />
+  </EntityType>
+  <EntityType Name="orderitem">
+    <Key>
+      <PropertyRef Name="orderID" />
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="orderID" Type="Int64" Nullable="false" />
+    <Property Name="productID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="sellingPrice" Type="Decimal" Nullable="false" />
+    <Property Name="totalPrice" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="buyorder" Relationship="Self.orderitem_fk1" FromRole="orderitem" ToRole="buyorder" />
+    <NavigationProperty Name="product" Relationship="Self.orderitem_fk2" FromRole="orderitem" ToRole="product" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="showcaseID" Type="Int64" Nullable="false" />
+    <Property Name="unitPrice" Type="Decimal" Nullable="false" />
+    <Property Name="stockQuantity" Type="Int32" Nullable="false" />
+    <Property Name="discount" Type="Decimal" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="orderitems" Relationship="Self.orderitem_fk2" FromRole="product" ToRole="orderitem" />
+    <NavigationProperty Name="salesrecords" Relationship="Self.salesrecord_fk2" FromRole="product" ToRole="salesrecord" />
+    <NavigationProperty Name="showcase" Relationship="mdbModel.product_fk1" FromRole="product" ToRole="showcase" />
+  </EntityType>
+  <EntityType Name="region">
+    <Key>
+      <PropertyRef Name="regionID" />
+    </Key>
+    <Property Name="regionID" Type="Int32" Nullable="false" />
+    <Property Name="regionName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="districts" Relationship="Self.district_fk1" FromRole="region" ToRole="district" />
+  </EntityType>
+  <EntityType Name="reservation">
+    <Key>
+      <PropertyRef Name="showcaseID" />
+      <PropertyRef Name="customerID" />
+    </Key>
+    <Property Name="showcaseID" Type="Int64" Nullable="false" />
+    <Property Name="customerID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="queueDate" Type="DateTime" Nullable="false" />
+    <Property Name="duration" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="Self.reservation_fk2" FromRole="reservation" ToRole="customer" />
+    <NavigationProperty Name="showcase" Relationship="mdbModel.reservation_fk1" FromRole="reservation" ToRole="showcase" />
+  </EntityType>
+  <EntityType Name="salesrecord">
+    <Key>
+      <PropertyRef Name="staffID" />
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="staffID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="productID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="unitPrice" Type="Decimal" Nullable="false" />
+    <Property Name="soldQuantity" Type="Int32" Nullable="false" />
+    <Property Name="commissionAmount" Type="Decimal" Nullable="false" />
+    <Property Name="salesDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="product" Relationship="Self.salesrecord_fk2" FromRole="salesrecord" ToRole="product" />
+    <NavigationProperty Name="staff" Relationship="Self.salesrecord_fk1" FromRole="salesrecord" ToRole="staff" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="staffID" />
+    </Key>
+    <Property Name="staffID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="staffName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telephone" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hiringType" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hireDate" Type="DateTime" Nullable="false" />
+    <Property Name="position" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="commissionRate" Type="Decimal" />
+    <Property Name="avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="salesrecords" Relationship="Self.salesrecord_fk1" FromRole="staff" ToRole="salesrecord" />
+  </EntityType>
+  <EntityType Name="tenant">
+    <Key>
+      <PropertyRef Name="tenantID" />
+    </Key>
+    <Property Name="tenantID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="billingAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telephone" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="joinDate" Type="DateTime" Nullable="false" />
+    <Property Name="avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="showcases" Relationship="mdbModel.showcase_fk1" FromRole="tenant" ToRole="showcase" />
+    <NavigationProperty Name="rentrecords" Relationship="mdbModel.rentrecord_fk2" FromRole="tenant" ToRole="rentrecord" />
+    <NavigationProperty Name="bills" Relationship="mdbModel.bill_fk1" FromRole="tenant" ToRole="bill" />
+  </EntityType>
+  <Association Name="buyorder_fk2">
+    <End Role="branch" Type="Self.branch" Multiplicity="1" />
+    <End Role="buyorder" Type="Self.buyorder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="branch">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="buyorder">
+        <PropertyRef Name="pickupPlace" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="buyorder_fk1">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="buyorder" Type="Self.buyorder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customerID" />
+      </Principal>
+      <Dependent Role="buyorder">
+        <PropertyRef Name="customerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="orderitem_fk1">
+    <End Role="buyorder" Type="Self.buyorder" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="orderitem" Type="Self.orderitem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="buyorder">
+        <PropertyRef Name="orderID" />
+      </Principal>
+      <Dependent Role="orderitem">
+        <PropertyRef Name="orderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="creditcard_fk1">
+    <End Role="customer" Type="Self.customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="creditcard" Type="Self.creditcard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customerID" />
+      </Principal>
+      <Dependent Role="creditcard">
+        <PropertyRef Name="customerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="reservation_fk2">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="reservation" Type="Self.reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customerID" />
+      </Principal>
+      <Dependent Role="reservation">
+        <PropertyRef Name="customerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="district_fk1">
+    <End Role="region" Type="Self.region" Multiplicity="1" />
+    <End Role="district" Type="Self.district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="region">
+        <PropertyRef Name="regionID" />
+      </Principal>
+      <Dependent Role="district">
+        <PropertyRef Name="regionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="orderitem_fk2">
+    <End Role="product" Type="Self.product" Multiplicity="1" />
+    <End Role="orderitem" Type="Self.orderitem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="productID" />
+      </Principal>
+      <Dependent Role="orderitem">
+        <PropertyRef Name="productID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="salesrecord_fk2">
+    <End Role="product" Type="Self.product" Multiplicity="1" />
+    <End Role="salesrecord" Type="Self.salesrecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="productID" />
+      </Principal>
+      <Dependent Role="salesrecord">
+        <PropertyRef Name="productID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="salesrecord_fk1">
+    <End Role="staff" Type="Self.staff" Multiplicity="1" />
+    <End Role="salesrecord" Type="Self.salesrecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="staff">
+        <PropertyRef Name="staffID" />
+      </Principal>
+      <Dependent Role="salesrecord">
+        <PropertyRef Name="staffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="branches" EntityType="Self.branch" />
+    <EntitySet Name="buyorders" EntityType="Self.buyorder" />
+    <EntitySet Name="creditcards" EntityType="Self.creditcard" />
+    <EntitySet Name="customers" EntityType="Self.customer" />
+    <EntitySet Name="districts" EntityType="Self.district" />
+    <EntitySet Name="orderitems" EntityType="Self.orderitem" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="regions" EntityType="Self.region" />
+    <EntitySet Name="reservations" EntityType="Self.reservation" />
+    <EntitySet Name="salesrecords" EntityType="Self.salesrecord" />
+    <EntitySet Name="staffs" EntityType="Self.staff" />
+    <EntitySet Name="tenants" EntityType="Self.tenant" />
+    <AssociationSet Name="buyorder_fk2" Association="Self.buyorder_fk2">
+      <End Role="branch" EntitySet="branches" />
+      <End Role="buyorder" EntitySet="buyorders" />
+    </AssociationSet>
+    <AssociationSet Name="buyorder_fk1" Association="Self.buyorder_fk1">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="buyorder" EntitySet="buyorders" />
+    </AssociationSet>
+    <AssociationSet Name="orderitem_fk1" Association="Self.orderitem_fk1">
+      <End Role="buyorder" EntitySet="buyorders" />
+      <End Role="orderitem" EntitySet="orderitems" />
+    </AssociationSet>
+    <AssociationSet Name="creditcard_fk1" Association="Self.creditcard_fk1">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="creditcard" EntitySet="creditcards" />
+    </AssociationSet>
+    <AssociationSet Name="reservation_fk2" Association="Self.reservation_fk2">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="reservation" EntitySet="reservations" />
+    </AssociationSet>
+    <AssociationSet Name="district_fk1" Association="Self.district_fk1">
+      <End Role="region" EntitySet="regions" />
+      <End Role="district" EntitySet="districts" />
+    </AssociationSet>
+    <AssociationSet Name="orderitem_fk2" Association="Self.orderitem_fk2">
+      <End Role="product" EntitySet="products" />
+      <End Role="orderitem" EntitySet="orderitems" />
+    </AssociationSet>
+    <AssociationSet Name="salesrecord_fk2" Association="Self.salesrecord_fk2">
+      <End Role="product" EntitySet="products" />
+      <End Role="salesrecord" EntitySet="salesrecords" />
+    </AssociationSet>
+    <AssociationSet Name="salesrecord_fk1" Association="Self.salesrecord_fk1">
+      <End Role="staff" EntitySet="staffs" />
+      <End Role="salesrecord" EntitySet="salesrecords" />
+    </AssociationSet>
+    <EntitySet Name="showcases" EntityType="mdbModel.showcase" />
+    <AssociationSet Name="showcase_fk2" Association="mdbModel.showcase_fk2">
+      <End Role="branch" EntitySet="branches" />
+      <End Role="showcase" EntitySet="showcases" />
+    </AssociationSet>
+    <AssociationSet Name="product_fk1" Association="mdbModel.product_fk1">
+      <End Role="showcase" EntitySet="showcases" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="reservation_fk1" Association="mdbModel.reservation_fk1">
+      <End Role="showcase" EntitySet="showcases" />
+      <End Role="reservation" EntitySet="reservations" />
+    </AssociationSet>
+    <AssociationSet Name="showcase_fk1" Association="mdbModel.showcase_fk1">
+      <End Role="tenant" EntitySet="tenants" />
+      <End Role="showcase" EntitySet="showcases" />
+    </AssociationSet>
+    <EntitySet Name="rentrecords" EntityType="mdbModel.rentrecord" />
+    <AssociationSet Name="rentrecord_fk1" Association="mdbModel.rentrecord_fk1">
+      <End Role="showcase" EntitySet="showcases" />
+      <End Role="rentrecord" EntitySet="rentrecords" />
+    </AssociationSet>
+    <AssociationSet Name="rentrecord_fk2" Association="mdbModel.rentrecord_fk2">
+      <End Role="tenant" EntitySet="tenants" />
+      <End Role="rentrecord" EntitySet="rentrecords" />
+    </AssociationSet>
+    <EntitySet Name="bills" EntityType="mdbModel.bill" />
+    <AssociationSet Name="bill_fk1" Association="mdbModel.bill_fk1">
+      <End Role="tenant" EntitySet="tenants" />
+      <End Role="bill" EntitySet="bills" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="showcase">
+    <Key>
+      <PropertyRef Name="showcaseID" />
+    </Key>
+    <Property Name="showcaseID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenantID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="branchID" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="monthlyRent" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="End_Day" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="branch" Relationship="mdbModel.showcase_fk2" FromRole="showcase" ToRole="branch" />
+    <NavigationProperty Name="products" Relationship="mdbModel.product_fk1" FromRole="showcase" ToRole="product" />
+    <NavigationProperty Name="reservations" Relationship="mdbModel.reservation_fk1" FromRole="showcase" ToRole="reservation" />
+    <NavigationProperty Name="tenant" Relationship="mdbModel.showcase_fk1" FromRole="showcase" ToRole="tenant" />
+    <NavigationProperty Name="rentrecords" Relationship="mdbModel.rentrecord_fk1" FromRole="showcase" ToRole="rentrecord" />
+  </EntityType>
+  <Association Name="showcase_fk2">
+    <End Type="mdbModel.branch" Role="branch" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="mdbModel.showcase" Role="showcase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="branch">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="showcase">
+        <PropertyRef Name="branchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="product_fk1">
+    <End Type="mdbModel.showcase" Role="showcase" Multiplicity="1" />
+    <End Type="mdbModel.product" Role="product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="showcase">
+        <PropertyRef Name="showcaseID" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="showcaseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="reservation_fk1">
+    <End Type="mdbModel.showcase" Role="showcase" Multiplicity="1" />
+    <End Type="mdbModel.reservation" Role="reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="showcase">
+        <PropertyRef Name="showcaseID" />
+      </Principal>
+      <Dependent Role="reservation">
+        <PropertyRef Name="showcaseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="showcase_fk1">
+    <End Type="mdbModel.tenant" Role="tenant" Multiplicity="0..1" />
+    <End Type="mdbModel.showcase" Role="showcase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tenant">
+        <PropertyRef Name="tenantID" />
+      </Principal>
+      <Dependent Role="showcase">
+        <PropertyRef Name="tenantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="rentrecord">
+    <Key>
+      <PropertyRef Name="rentID" />
+    </Key>
+    <Property Name="rentID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenantID" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="showcaseID" Type="Int64" Nullable="false" />
+    <Property Name="rentprice" Type="Decimal" Nullable="false" />
+    <Property Name="startday" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="duration" Type="Int32" Nullable="false" />
+    <Property Name="endday" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="showcase" Relationship="mdbModel.rentrecord_fk1" FromRole="rentrecord" ToRole="showcase" />
+    <NavigationProperty Name="tenant" Relationship="mdbModel.rentrecord_fk2" FromRole="rentrecord" ToRole="tenant" />
+  </EntityType>
+  <Association Name="rentrecord_fk1">
+    <End Type="mdbModel.showcase" Role="showcase" Multiplicity="1" />
+    <End Type="mdbModel.rentrecord" Role="rentrecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="showcase">
+        <PropertyRef Name="showcaseID" />
+      </Principal>
+      <Dependent Role="rentrecord">
+        <PropertyRef Name="showcaseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rentrecord_fk2">
+    <End Type="mdbModel.tenant" Role="tenant" Multiplicity="1" />
+    <End Type="mdbModel.rentrecord" Role="rentrecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tenant">
+        <PropertyRef Name="tenantID" />
+      </Principal>
+      <Dependent Role="rentrecord">
+        <PropertyRef Name="tenantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="bill">
+    <Key>
+      <PropertyRef Name="billID" />
+    </Key>
+    <Property Name="billID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="billDate" Type="DateTime" Nullable="false" />
+    <Property Name="tenantID" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="rentalCharge" Type="Decimal" Nullable="false" />
+    <Property Name="income" Type="Decimal" Nullable="false" />
+    <Property Name="totalCharge" Type="Decimal" Nullable="false" />
+    <NavigationProperty Name="tenant" Relationship="mdbModel.bill_fk1" FromRole="bill" ToRole="tenant" />
+  </EntityType>
+  <Association Name="bill_fk1">
+    <End Type="mdbModel.tenant" Role="tenant" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="mdbModel.bill" Role="bill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tenant">
+        <PropertyRef Name="tenantID" />
+      </Principal>
+      <Dependent Role="bill">
+        <PropertyRef Name="tenantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

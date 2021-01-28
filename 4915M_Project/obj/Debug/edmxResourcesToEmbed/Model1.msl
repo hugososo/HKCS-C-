@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mdbModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="branches">
+      <EntityTypeMapping TypeName="mdbModel.branch">
+        <MappingFragment StoreEntitySet="branch">
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="branchName" ColumnName="branchName" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="billingAddress" ColumnName="billingAddress" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="buyorders">
+      <EntityTypeMapping TypeName="mdbModel.buyorder">
+        <MappingFragment StoreEntitySet="buyorder">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+          <ScalarProperty Name="orderDateTime" ColumnName="orderDateTime" />
+          <ScalarProperty Name="pickupPlace" ColumnName="pickupPlace" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="creditcards">
+      <EntityTypeMapping TypeName="mdbModel.creditcard">
+        <MappingFragment StoreEntitySet="creditcard">
+          <ScalarProperty Name="cardNumber" ColumnName="cardNumber" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="validDate" ColumnName="validDate" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="mdbModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+          <ScalarProperty Name="billingAddress" ColumnName="billingAddress" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="mdbModel.district">
+        <MappingFragment StoreEntitySet="district">
+          <ScalarProperty Name="districtID" ColumnName="districtID" />
+          <ScalarProperty Name="regionID" ColumnName="regionID" />
+          <ScalarProperty Name="districtName" ColumnName="districtName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderitems">
+      <EntityTypeMapping TypeName="mdbModel.orderitem">
+        <MappingFragment StoreEntitySet="orderitem">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="sellingPrice" ColumnName="sellingPrice" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="mdbModel.product">
+        <MappingFragment StoreEntitySet="product">
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="showcaseID" ColumnName="showcaseID" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="stockQuantity" ColumnName="stockQuantity" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="regions">
+      <EntityTypeMapping TypeName="mdbModel.region">
+        <MappingFragment StoreEntitySet="region">
+          <ScalarProperty Name="regionID" ColumnName="regionID" />
+          <ScalarProperty Name="regionName" ColumnName="regionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reservations">
+      <EntityTypeMapping TypeName="mdbModel.reservation">
+        <MappingFragment StoreEntitySet="reservation">
+          <ScalarProperty Name="showcaseID" ColumnName="showcaseID" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="queueDate" ColumnName="queueDate" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesrecords">
+      <EntityTypeMapping TypeName="mdbModel.salesrecord">
+        <MappingFragment StoreEntitySet="salesrecord">
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="soldQuantity" ColumnName="soldQuantity" />
+          <ScalarProperty Name="commissionAmount" ColumnName="commissionAmount" />
+          <ScalarProperty Name="salesDate" ColumnName="salesDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staffs">
+      <EntityTypeMapping TypeName="mdbModel.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="staffName" ColumnName="staffName" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="hiringType" ColumnName="hiringType" />
+          <ScalarProperty Name="hireDate" ColumnName="hireDate" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="commissionRate" ColumnName="commissionRate" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tenants">
+      <EntityTypeMapping TypeName="mdbModel.tenant">
+        <MappingFragment StoreEntitySet="tenant">
+          <ScalarProperty Name="tenantID" ColumnName="tenantID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+          <ScalarProperty Name="billingAddress" ColumnName="billingAddress" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="joinDate" ColumnName="joinDate" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="showcases">
+      <EntityTypeMapping TypeName="mdbModel.showcase">
+        <MappingFragment StoreEntitySet="showcase">
+          <ScalarProperty Name="End_Day" ColumnName="End Day" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="monthlyRent" ColumnName="monthlyRent" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="tenantID" ColumnName="tenantID" />
+          <ScalarProperty Name="showcaseID" ColumnName="showcaseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rentrecords">
+      <EntityTypeMapping TypeName="mdbModel.rentrecord">
+        <MappingFragment StoreEntitySet="rentrecord">
+          <ScalarProperty Name="endday" ColumnName="endday" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="startday" ColumnName="startday" />
+          <ScalarProperty Name="rentprice" ColumnName="rentprice" />
+          <ScalarProperty Name="showcaseID" ColumnName="showcaseID" />
+          <ScalarProperty Name="tenantID" ColumnName="tenantID" />
+          <ScalarProperty Name="rentID" ColumnName="rentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bills">
+      <EntityTypeMapping TypeName="mdbModel.bill">
+        <MappingFragment StoreEntitySet="bill">
+          <ScalarProperty Name="totalCharge" ColumnName="totalCharge" />
+          <ScalarProperty Name="income" ColumnName="income" />
+          <ScalarProperty Name="rentalCharge" ColumnName="rentalCharge" />
+          <ScalarProperty Name="tenantID" ColumnName="tenantID" />
+          <ScalarProperty Name="billDate" ColumnName="billDate" />
+          <ScalarProperty Name="billID" ColumnName="billID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,136 @@
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\bin\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\bin\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\bin\Debug\EntityFramework.dll
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\bin\Debug\EntityFramework.xml
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.ShowcaseList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.TenantMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.ForgetPw.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.CustomerMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.StaffMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.Profile.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.Register.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.Login.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.Properties.Resources.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\_4915M_Project.Inventory.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\4915M_Project.csproj.GenerateResource.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\4915M_Project.csproj.CoreCompileInputs.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\4915M_Project.csproj.CopyComplete
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\obj\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project\4915M_Project\bin\Debug\4915M_Project.exe.config
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\bin\Debug\4915M_Project.exe.config
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\bin\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\bin\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\bin\Debug\EntityFramework.dll
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\bin\Debug\EntityFramework.xml
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.ShowcaseList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.TenantMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.ForgetPw.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.CustomerMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.StaffMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.Profile.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.Register.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.Login.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.Properties.Resources.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\_4915M_Project.Inventory.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\4915M_Project.csproj.GenerateResource.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\4915M_Project.csproj.CoreCompileInputs.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\4915M_Project.csproj.CopyComplete
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project(broken)\4915M_Project\obj\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantProfile.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffProfile.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ForgetPw.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffMenu.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Register.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Login.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Properties.Resources.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.GenerateResource.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CoreCompileInputs.cache
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe.config
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.dll
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\MySql.Data.dll
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.xml
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CopyComplete
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ChangeAddress.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerProfile.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CreateReceipt.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffShowcaseList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffOrder.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerShowcaseList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerOrder.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantShowcaseList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffInventory.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe.config
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.pdb
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.dll
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\MySql.Data.dll
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.xml
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerMenu.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerShowcaseList.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerOrder.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantInventory.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffInventory.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantShowcaseList.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantMenu.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffOrder.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ChangeAddress.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CreateReceipt.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerProfile.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffShowcaseList.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantProfile.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffProfile.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ForgetPw.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffMenu.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Register.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Login.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Properties.Resources.resources
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.GenerateResource.cache
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CoreCompileInputs.cache
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CopyComplete
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.exe
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.pdb
+C:\Users\CK Tam\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csprojAssemblyReference.cache
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe.config
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.dll
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\MySql.Data.dll
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\bin\Debug\EntityFramework.xml
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csprojAssemblyReference.cache
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerMenu.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerShowcaseList.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerOrder.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantInventory.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffInventory.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantShowcaseList.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantMenu.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffOrder.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ChangeAddress.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CreateReceipt.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CustomerProfile.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffShowcaseList.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantProfile.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffProfile.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.ForgetPw.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.StaffMenu.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Register.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Login.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Properties.Resources.resources
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.GenerateResource.cache
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CoreCompileInputs.cache
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csproj.CopyComplete
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.exe
+C:\Users\So Ho Tai\Desktop\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.pdb
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.TenantInventory.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.CreateBill.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.BillList.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\_4915M_Project.Productmain.resources
+C:\Users\So Ho Tai\source\repos\4915M_Project(new)\4915M_Project\obj\Debug\4915M_Project.csprojAssemblyReference.cache
